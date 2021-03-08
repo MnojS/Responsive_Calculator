@@ -15,10 +15,10 @@ isDecimal=false;
 
 numbers.forEach(number => {
     number.addEventListener("click",(e)=>{
-        if (e.target.innerText === '.' && !isDecimal) {
+        if (e.target.innerText === '.') {
             isDecimal=true;
         }
-        else if(e.target.innerText === '.' && isDecimal){
+        else if(e.target.innerText === '.'){
             return;
         }
         displayTwo += e.target.innerText;
