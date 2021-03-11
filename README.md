@@ -1,3 +1,3 @@
 # Scientific_Caculator_UI
 
-VaiBhaVi is Genius
+VaiBhaVi is Super-Genius
