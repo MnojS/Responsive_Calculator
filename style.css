@@ -28,6 +28,9 @@ section{
     padding: 5px;
     box-shadow: inset 4px 4px 25px 9px rgb(15, 64, 170);
 }
+input{
+    font-family: ink free;
+}
 /* calculation screen  */
 .display{
     background: -webkit-linear-gradient(right , rgb(117, 30, 216) , rgb(49, 119, 211));
