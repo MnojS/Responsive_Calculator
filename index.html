@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <section>
@@ -17,38 +17,38 @@
                 <!-- Current Calculation -->
                 <div class="display_2">0</div>
                 <!-- ALU Result -->
-                <div class="result" >0</div>
+                <input class="result"  id="result"/>
             </div>
             <!-- Keyboard -->
             <div class="all_buttons">
-                <div class="button reset"><abbr title="Reset">C</abbr></div>
-                <div class="button backspace"><abbr title="Backspace">CE</abbr></div>
-                <div class="button operation"><abbr title="Module"></abbr>%</div>
-                <div class="button operation"><abbr title="Divide">/</abbr></div>
-                <div class="button operation"><abbr title="Opening Braces">(</abbr></div>
-                <div class="button operation braces"><abbr title="Closing Braces">)</abbr></div>
-                <div class="button number">7</div>
-                <div class="button number">8</div>
-                <div class="button number">9</div>
-                <div class="button operation"><abbr title="Multiply">&times;</abbr></div>
-                <div class="button operation"><abbr title="Logarithm">log</abbr></div>
-                <div class="button operation"><abbr title="Natural Logarithm">ln</abbr></div>
-                <div class="button number">4</div>
-                <div class="button number">5</div>
-                <div class="button number">6</div>
-                <div class="button operation"><abbr title="Subtract">-</abbr></div>
-                <div class="button operation"><abbr title="inverse">Inv</abbr></div>
-                <div class="button operation"><abbr title="Sine">sin</abbr></div>
-                <div class="button number">1</div>
-                <div class="button number">2</div>
-                <div class="button number">3</div>
-                <div class="button operation"><abbr title="Addition">+</abbr></div>
-                <div class="button operation"><abbr title="Cosine">cos</abbr></div>
-                <div class="button operation"><abbr title="Tangent">tan</abbr></div>
-                <div class="button number_zero">0</div>
-                <div class="button decimal"><abbr title="Decimal(dot)">.</abbr></div>
-                <div class="button equals"><abbr title="Equals to ">=</abbr></div>
-                <div class="button pie">π</div>
+                <input class="button reset" type="button" value="C" onclick="clr()"/>
+                <input class="button backspace" type="button" value="CE" onclick="clr()" />
+                <input class="button operation" % type="button" value="%" onclick="dis()"/>
+                <input class="button operation" type="button" value="/" onclick="dis('/')" />
+                <input class="button operation" type="button" value="(" onclick="dis('(')" />
+                <input class="button operation braces" type="button" value=")" onclick="dis(')')" />
+                <input class="button number" type="button" value="7" onclick="dis(7)" />
+                <input class="button number" type="button" value="8" onclick="dis(8)" />
+                <input class="button number" type="button" value="9" onclick="dis(9)" />
+                <input class="button operation" type="button" value="*" onclick="dis('*')" />
+                <input class="button operation" type="button" value="log" onclick="dis('log')" />
+                <input class="button operation" type="button" value="ln" onclick="dis('ln')" />
+                <input class="button number" type="button" value="4" onclick="dis(4)"/>
+                <input class="button number" type="button" value="5" onclick="dis(5)" />
+                <input class="button number" type="button" value="6" onclick="dis(6)"/>
+                <input class="button operation" type="button" value="-" onclick="dis('-')" />
+                <input class="button operation" type="button" value="Inv" onclick="dis('Inv')" />
+                <input class="button operation" type="button" value="sin" onclick="dis('sin')" />
+                <input class="button number" type="button" value="1" onclick="dis(1)" />
+                <input class="button number" type="button" value="2" onclick="dis(2)" />
+                <input class="button number" type="button" value="3" onclick="dis(3)" />
+                <input class="button operation" type="button" value="+" onclick="dis('+')" />
+                <input class="button operation" type="button" value="cos" onclick="dis('cos')" />
+                <input class="button operation" type="button" value="tan" onclick="dis('tan')" />
+                <input class="button number_zero" type="button" value="0" onclick="dis(0)" />
+                <input class="button decimal" type="button" value="." onclick="dis('.')" />
+                <input class="button equals" type="button" value="=" onclick="solve()" />
+                <input class="button pie" type="button" value="π" onclick="dis('π')" />
                 <footer>
                     <marquee behavior="slide" direction="left">
                         <span>M</span>
@@ -61,6 +61,6 @@
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>
